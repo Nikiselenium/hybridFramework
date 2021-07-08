@@ -1,0 +1,48 @@
+package pagepackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Homepage {
+
+	@FindBy(xpath="//div[text()='Setting']") private WebElement settings;
+	
+
+	
+	public Homepage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+
+	public WebElement getSettings()
+	{
+		
+		return settings;
+	}
+	
+	public void clicksettings()
+	{
+		
+		settings.click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
